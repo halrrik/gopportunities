@@ -25,7 +25,7 @@ func initializeRoutes(router *gin.Engine) {
 		//UPDATE
 		v1.PUT("/opening", handler.UpdateOpeningHandler)
 		//listar todo
-		v1.GET("/openings", handler.ListOpeningHandler)
+		v1.GET("/openings", handler.ListOpeningsHandler)
 	}
 
 	// router.Group("/api/")
