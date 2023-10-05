@@ -8,7 +8,7 @@ func Initialize() {
 
 	//todo que esta no package es accesivel no pacage entero, se fuera
 	//fuera del package usaria router.printMe()
-	printMe()
+	// printMe()
 
 	//inicializa o router utilizando las confiuracoes defauilt do gin
 	// trocamos r que normalmente se usa por router para quedar mas intuitivo
