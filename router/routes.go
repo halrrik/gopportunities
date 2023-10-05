@@ -10,6 +10,10 @@ func printMe() {
 }
 
 func initializeRoutes(router *gin.Engine) {
+
+	//initialize handler
+	handler.InitializeHandler()
+
 	v1 := router.Group("api/v1")
 	{
 		//mostrar

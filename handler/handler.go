@@ -1,5 +1,10 @@
 package handler
 
+import (
+	"github.com/halrrik/gopportunities/config"
+	"gorm.io/gorm"
+)
+
 // func CreateOpeningHandler(ctx *gin.Context) {
 // 	ctx.JSON(http.StatusOK, gin.H{
 // 		"msg": "POST Opening texto texto",
@@ -29,3 +34,13 @@ package handler
 // 		"msg": "GET Opening texto texto",
 // 	})
 // }
+
+var (
+	logger *config.Logger
+	db     *gorm.DB
+)
+
+func InitializeHandler() {
+	logger = config.GetLogger("handler")
+	db = config.GetSQLite()
+}
