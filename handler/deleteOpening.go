@@ -8,6 +8,18 @@ import (
 	"github.com/halrrik/gopportunities/schemas"
 )
 
+// @BasePath /api/v1
+
+// @Summary Delete opening
+// @Description Create a new job opening
+// @Tags Openings
+// @Accept json
+// @Produce json
+// @Param request body DeleteOpeningRequest true "Request body"
+// @Success 200 {object} DeleteOpeningResponse
+// @Failure 400 {object} ErrorResponse
+// @Failure 500 {object} ErrorResponse
+// @Router /opening [delete]
 func DeleteOpeningHandler(ctx *gin.Context) {
 	// ctx.JSON(http.StatusOK, gin.H{
 	// 	"msg": "delete Opening texto texto",
